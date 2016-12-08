@@ -1,0 +1,37 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.list-group{
+  overflow: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 256px;
+}
+.list-group-item{
+  overflow: auto;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
